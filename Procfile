@@ -1,1 +1,1 @@
-web: gunicorn --worker=1 project3_app:__init__
+web: gunicorn --worker=1 app:app
