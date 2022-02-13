@@ -27,5 +27,5 @@ def result():
 
     return render_template('result.html', data_uk=str(int(y_pred[0])//10000), data_chun=str((int(y_pred[0])%10000))[0], data_last=str((int(y_pred[0])%10000))[1:]), 200
 
-if __name__ == "__main__":
-    app.run(debug=True)
+# if __name__ == "__main__":
+#     app.run(debug=True)
