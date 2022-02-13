@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Flask Index</title>
+</head>
+
+<body bgcolor=#9ED3FF>
+    
+    <center>
+
+    <h1>전세 가격 예측 서비스</h1><br>
+        
+    <form method="POST", action="{{ url_for('result') }}"
+    <b>
+        <label for="exampleDataList" class="form-label">건축년도</label>
+            <input type="number" list="datalistOptions" name="year" placeholder="건축년도 네자리 ex)2011">
+                <datalist id="datalistOptions">
+                </datalist>
+                <br><br>
+            
+        <label for="exampleDataList" class="form-label">종류</label>
+            <input type="text" list="aptvil" name="kinds" placeholder="종류 입력">
+                <datalist id="aptvil">
+                    <option value="아파트">
+                    <option value="빌라">
+                </datalist>
+                <br><br>
+            
+        <label for="exampleDataList" class="form-label">행정구</label>
+            <input type="text" list="datalistOptions" name="gu" placeholder="행정구 입력 ex)송파구">
+                <datalist id="datalistOptions">
+                </datalist>
+                <br><br>
+
+        <label for="exampleDataList" class="form-label">법정동</label>
+            <input type="text" list="datalistOptions" name="dong" placeholder="법정구 입력 ex)잠실동">
+                <datalist id="datalistOptions">
+                </datalist>
+                <br><br>
+
+    <label for="exampleDataList" class="form-label">평수</label>
+        <input type="number" list="datalistOptions" name="area" placeholder="평수 입력 ex)30">
+            <datalist id="datalistOptions">
+            </datalist>
+            <br><br>
+
+    <label for="exampleDataList" class="form-label">층수</label>
+        <input type="number" list="datalistOptions" name="floor" placeholder="층수 입력 ex)15">
+            <datalist id="datalistOptions">
+            </datalist>
+    </b><br><br>
+    <input type="submit", value="예측하기!">
+    </form>
+
+</center>
+</body>
+<br><br>
+<footer align='center'>Powerd by <strong>© 2022 Codestates Jayden</strong></footer>
+</html>

@@ -9,4 +9,3 @@ API_URL = f'http://openapi.molit.go.kr:8081/OpenAPI_ToolInstallPackage/service/r
 response = requests.get(API_URL)
 
 print(response.text)
-
