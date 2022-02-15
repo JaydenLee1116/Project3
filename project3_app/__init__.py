@@ -26,7 +26,8 @@ def create_app():
         y_pred = model.predict([X_sample])
         # print(f'최소 약 {str(int(y_pred[0]))[0]}억 {str(int(y_pred[0]))[1]},{str(int(y_pred[0]))[2:]}만 (원) 입니다.')
 
-        return render_template('result.html', data_uk=str(int(y_pred[0])//10000), data_chun=str((int(y_pred[0])%10000))[0], data_last=str((int(y_pred[0])%10000))[1:]), 200
+        return render_template('result.html', data_uk=str(int(y_pred[0])//10000), data_chun=str((int(y_pred[0])%10000))[0], data_last=str((int(y_pred[0])%10000))[1:], 
+        year=data_year, kinds=data_kinds, gu=data_gu, dong=data_dong, area=data_area, floor=data_floor), 200
 
     return app
 
