@@ -13,7 +13,7 @@ scheduler = BlockingScheduler({'apscheduler.timezone':'UTC'})
 
 req = urllib.request
 
-serviceKey = 'OaxPEjsnZFUf%2BJIq6Fe2PURnV9nqguIJbABGeI2aSfh6nVOhBkz0pa3L1AeLA%2BC76Q2gWZTRxmndm9uBoQfBPA%3D%3D' # 개인 인증키
+serviceKey =  # 개인 인증키
 LAWD_CD_list = [11680, 11740, 11305, 11500, 11620, 11215, 11530, 11545, 11350, 11320, 11230, 11590, 11440, 11410, 11650, 11200, 11290, 11710, 11470, 11560, 11170, 11380, 11110, 11140, 11260]   # 지역구 코드
 # '01', '02', '03', '04', '05', '06',  에러 : '08'
 aptTradeTotal = pd.DataFrame()
